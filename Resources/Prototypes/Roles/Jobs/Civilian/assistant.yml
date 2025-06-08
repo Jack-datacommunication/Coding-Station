@@ -76,7 +76,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- type: job # goob edit
+- type: job # can we please leave assistant unchanged? I'm asking from the bottom of my heart. Please.
   id: Passenger
   name: job-name-passenger
   description: job-description-passenger
@@ -84,13 +84,9 @@
   startingGear: PassengerGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
-  goobcoins: 0 #Goob content
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 36000 #10 hrs
-      inverted: true # get a job you bum  
-#  access:
-#  - Maintenance
+  goobcoins: 10 #Goob content
+  access:
+  - Maintenance
 
 - type: startingGear
   id: PassengerGear
